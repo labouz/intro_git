@@ -1,0 +1,121 @@
+---
+title: "Git and GitHub Fundamentals"
+format: revealjs
+editor: visual
+---
+
+## Hello 👋🏼
+
+👩🏻‍🎓 Doctoral student, IS
+
+💊 NLP, social computing, drugs
+
+⏱️ Passionate about efficiency
+
+🐱 👫🏻 🍷 🍣 🦪 🍵
+
+## Outline
+
+-   Introduce Git
+
+-   Setup Git
+
+-   Git basics with examples
+
+-   Introduce GitHub
+
+-   GitHub basics with examples
+
+-   Examples and code snippets will be presented in Python
+
+## Intro
+
+-   Git and Github are essential tools for developers
+
+-   Git is a distributed version control system
+
+-   Github is a web-based platform for storing and managing Git repositories
+
+-   Examples and code snippets will be presented in Python
+
+::: notes
+Welcome to the lecture on the fundamentals of Git and Github. Git is a powerful tool that enables developers to manage and track changes in their codebase. Github, on the other hand, is a web-based platform that provides a centralized location for storing and managing Git repositories. This lecture will cover the basics of Git and Github, including how to create a repository, make commits, and push changes to a remote repository. We will also cover how to use Github to collaborate with other developers and manage issues and pull requests.
+:::
+
+## Git Basics
+
+-   Git is a distributed version control system
+
+-   Creating a repository with **`git init`**
+
+-   Staging changes with **`git add`**
+
+-   Making commits with **`git commit`**
+
+-   Branching and merging with **`git branch`** and **`git merge`**
+
+::: notes
+Another powerful feature of Git is branching and merging. Branches allow you to work on multiple versions of your codebase simultaneously.
+:::
+
+## Show Me
+
+creating a repository, staging changes, making commits, branching, and merging
+
+## GitHub
+
+-   Github is a web-based platform for storing and managing Git repositories
+
+-   Creating a repository on Github
+
+-   Pushing local changes to Github with **`git remote add`** and **`git push`**
+
+::: notes
+Github is a web-based platform that provides a centralized location for storing and managing Git repositories. To use Github, you first need to create an account. Once you have created an account, you can create a new repository by clicking on the "New Repository" button on your Github homepage.
+
+This command will add a remote repository to your local repository and push your changes to the remote repository.
+:::
+
+## GitHub pt. 2
+
+-   Github provides a set of collaboration tools
+
+-   Creating pull requests to propose changes and get feedback
+
+-   Using issue tracking tools to track bugs and feature requests
+
+::: notes
+Github provides a powerful set of collaboration tools that allow developers to work together on the same codebase. One of the most common collaboration workflows is using pull requests. Pull requests allow developers to propose changes to a codebase and get feedback from other developers before merging the changes into the main branch.
+:::
+
+## Pull Requests (PR)
+
+-   Change branches with `git checkout -b <new_branch_name>`
+
+-   Create the remote branch and push changes with `git push -u origin <new_branch_name>`
+
+-   Create the PR on GitHub in the repository you want to merge into
+
+-   A PR will be reviewed by repository owner/manager
+
+-   Issues are a good tool for tracking bugs and feature requests
+
+::: notes
+This command will create a new branch and switch you to it. You can make your changes on this branch and commit them as usual.
+
+To create a pull request, go to the Github repository page and click on the "New Pull Request" button. Select your branch and the branch you want to merge your changes into. Github will show you a comparison of the changes between the two branches. You can then add a title and description for your pull request and submit it for review.
+
+Github also provides a set of issue tracking tools that allow developers to track bugs and feature requests. To create a new issue, click on the "New Issue" button on the Github repository page. You can then add a title and description for the issue and assign it to a specific developer.
+:::
+
+## Show Me Again
+
+-   Example Python code demonstrating creating a pull request and creating an issue
+
+## To Conclude
+
+-   Git and Github are essential tools for any developer working on a team
+
+-   This lecture covered the basics of Git and Github
+
+-   Examples and code snippets were presented in Python
