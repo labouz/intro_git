@@ -1,0 +1,236 @@
+---
+title: "Git RStudio & IDEs"
+subtitle: "BST 692 - 2021"
+author: "Raymond Balise & Layla Bouzoubaa"
+date: "`r format(Sys.time(), '%b %d, %Y')`"
+output:
+  xaringan::moon_reader:
+    css: ["default", "assets/sydney-fonts.css", "assets/sydney.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      countIncrementalSlides: false
+      beforeInit: "assets/macros.js"
+      ratio: '16:9' # alternatives '16:9' or '4:3' or others e.g. 13:9
+      navigation:
+        scroll: false # disable slide transitions by scrolling
+---
+
+```{r setup, echo= FALSE}
+knitr::opts_chunk$set(include = FALSE)
+```
+class: segue
+
+Interacting With `git` With GitHub and RStudio
+
+---
+
+![](images/meme5.jpeg)
+---
+
+![](images/meme7.jpeg)
+---
+
+# What does this look like?
+
++ Make a new project with RStudio in a New Directory with a git repository:
+
+.center[![](images/gitProject.png)]
+
+---
+
+At this point, this step should be familiar. But what if you wanted to bring in an *existing* repository from GitHub?
+
+</br>
+.center[![:scale 75%](images/basicGit.png)]
+
+---
+
+# I made a repository:
+
+.center[![](images/gh1.png)]
+
+---
+.center[
+It is here: https://github.com/UM-Biostatistics/bst_692_firstGitHub 
+
+
+![:scale 80% ](images/gh2.png)]
+
+---
+
+# You Can Clone
+
+.center[![](images/clone.png)]
+
+---
+
+.center[![](images/cloned.png)]
+
+---
+
+.center[![](images/cloned1.png)]
+
+---
+
+.center[![](images/cloned2.png)]
+
+---
+
++ After editing
+
+.center[![](images/cloned3.png)]
+
+---
+
+.center[![](images/cloned4.png)]
+
+---
+
+.center[![](images/cloned5.png)]
+
+---
+
+.center[![](images/cloned6.png)]
+
+---
+
+.center[![](images/cloned8.png)]
+
+---
+
+.center[![](images/cloned9.png)]
+
+---
+
+.center[![](images/cloned10.png)]
+
+---
+
+.center[![](images/cloned11.png)]
+
+---
+
+.center[![](images/cloned12.png)]
+
+---
+
+Checking the .red[History] of a branch is important because it enables you to display a list of all of the commits on your current branch. 😈
+
+</br>
+.center[![](images/history.png)]
+
+---
+
+# GitKracken
+
+I use GitKraken (mostly when I work in SAS).
+
+.center[![](images/gitKraken.png)]
+
+---
+
+
+.center[![](images/gitKraken1.png)]
+
+---
+
+.center[![](images/gitKraken2.png)]
+
+---
+
+.center[![](images/gitKraken3.png)]
+
+---
+
+.center[![](images/gitKraken4.png)]
+
+---
+Remember Diffs? `r emo::ji("smile")`
+
+.center[![](images/gitKraken5.png)]
+
+---
+Hey! Here's that repo I made! I can see the commits I made on my main "master" branch.
+.center[![:scale 85%](images/cloned7.png)]
+
+
+???
+Git Clients other than Rstudio can be really usefull too.
+---
+
+class: segue
+
+RULES/HOUSEKEEPING 🧹
+
+---
+
+# Remove Sensitive Files
+
++ Set your .gitignore to block all data files.
+I keep a gist here:
+.center[https://gist.github.com/RaymondBalise/300d99c2b6450feda3ed5a816f396191]
+
++ Never put files with sensitive data on GitHub (or other online services).  
++ Do NOT put sensitive data in a private repo on GitHub  (or other online services).
++ If you accidentally put protected health information on a machine that is not maintained by your company/university/entity contact the data privacy officer at your organization immediately.
++ Removing files from a repository is not casual:
+
+.center[.small[https://help.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository]]
+
+
+---
+
+## Commits
+
+* Commit related changes
+  * .li-sub[A commit should be a wrapper for related changes. For example, fixing two different bugs should produce two separate commits.]
+  
+* Don't commit half-done work
+
+* Commit often
+  * .li-sub[This allows you to share your code more frequently with others that way it’s easier for everyone to integrate changes regularly and avoid having .red[merge conflicts].]
+
+* Test before you commit
+  * .li-sub[Test your changes thoroughly to make sure it really is completed and has no side effects]
+  
+* Write good commit messages
+
+* Git is NOT a Backup System!
+  * .li-sub[You should not use git like it was a backup system. When doing version control, you should pay attention to committing semantically (related changes) – you shouldn’t just cram in files.]
+---
+
+## Always create a new branch
+
+This is your mantra: *new feature = new branch*
+
+When you are ready to merge your changes into `main`, create a .red[pull request] and request someone do a review your code and leave feedback
+
+![](images/code_review.png)
+
+---
+
+## Trim your tree 🌳
+
+Once you're merged your changes, it's a good practice to delete your branch. The only branches that should be on your repository are branches that are actively being developed on.
+
+
+.center[![:scale 75%](images/alot_branches.png)]
+---
+
+class: segue
+
+Resources
+
+---
+
+
++ Git Handbook
+  + https://guides.github.com/introduction/git-handbook/
++ Code Refinery
+  + https://coderefinery.github.io/git-intro/
++ Happy Git with R
+  + https://happygitwithr.com/
++ Oh Shit Git or Dangit Git
+  + https://ohshitgit.com/  
+  + https://dangitgit.com/en
