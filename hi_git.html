@@ -6,10 +6,11 @@
 <script src="hi_git_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="hi_git_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="hi_git_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="hi_git_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="hi_git_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.2.269">
 
-  <title>intro_git</title>
+  <meta name="author" content="Layla Bouzoubaa">
+  <title>Git and GitHub Fundamentals</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -318,37 +319,202 @@
     }
   </style>
 </head>
-<body class="quarto-light">
+<body class="quarto-dark">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">intro_git</h1>
+  <h1 class="title">Git and GitHub Fundamentals</h1>
 
 <div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Layla Bouzoubaa 
+</div>
+</div>
 </div>
 
+  <p class="date">3/8/23</p>
 </section>
-<section id="welcome" class="slide level2">
-<h2>Welcome</h2>
-<p>Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <a href="https://quarto.org/docs/presentations/" class="uri">https://quarto.org/docs/presentations/</a>.</p>
+<section id="hello" class="slide level2">
+<h2>Hello 👋🏼</h2>
+<p>👩🏻‍🎓 Doctoral student, IS</p>
+<p>💊 NLP, social computing, drugs</p>
+<p>⏱️ Passionate about efficiency</p>
+<p>🐱 👫🏻 🍷 🍣 🦪 🍵</p>
 </section>
-<section id="bullets" class="slide level2">
-<h2>Bullets</h2>
-<p>When you click the <strong>Render</strong> button a document will be generated that includes:</p>
+<section id="outline" class="slide level2">
+<h2>Outline</h2>
 <ul>
-<li>Content authored with markdown</li>
-<li>Output from executable code</li>
+<li><p>Introduce Git</p></li>
+<li><p>Setup Git</p></li>
+<li><p>Git basics with examples</p></li>
+<li><p>Introduce GitHub</p></li>
+<li><p>GitHub basics with examples</p></li>
+<li><p>Examples and code snippets will be presented in Python</p></li>
 </ul>
 </section>
-<section id="code" class="slide level2">
-<h2>Code</h2>
-<p>When you click the <strong>Render</strong> button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
+<section id="what-is-git" class="slide level2">
+<h2>What is Git</h2>
+<ul>
+<li><p>Git and Github are essential tools for developers</p></li>
+<li><p>Git is a distributed version control system</p>
+<p><img data-src="R_materials/images/meme1.jpeg" width="256"></p></li>
+</ul>
+<aside class="notes">
+<p>Git, a powerful tool from Unix, that enables developers to manage and track changes in their codebase. Github, on the other hand, is a web-based platform that provides a centralized location for storing and managing Git repositories. This lecture will cover the basics of Git and Github, including how to create a repository, make commits, and push changes to a remote repository. We will also cover how to use Github to collaborate with other developers and manage issues and pull requests.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why" class="slide level2">
+<h2>Why?</h2>
+
+<img data-src="R_materials/images/withoutGit2.png" width="382" class="r-stretch quarto-figure-center"><aside class="notes">
+<p>But actually, you an review a projects history to find out which changes were made, who made the changes, when were the changes made and why the changes were needed. + You end up with dozens or hundreds of versions. + What happens when somebody else needs to work on the code at the same time?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="git-basics-concepts" class="slide level2">
+<h2>Git Basics Concepts</h2>
+<ul>
+<li><p>Git is a distributed version control system - repositories</p>
+<ul>
+<li>Local v remote</li>
+</ul></li>
+<li><p>Creating a repository with <strong><code>git init</code></strong></p></li>
+<li><p>Staging changes with <strong><code>git add</code></strong></p></li>
+<li><p>Making commits with <strong><code>git commit</code></strong></p></li>
+<li><p>Branching and merging with <strong><code>git branch</code></strong> and <strong><code>git merge</code></strong></p></li>
+</ul>
+<aside class="notes">
+<p>A Git project - the whole collection of files and folders associated with a projects and their revision history . it contains a hidden .git folder</p>
+<p>Another powerful feature of Git is branching and merging. Branches allow you to work on multiple versions of your codebase simultaneously.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="again" class="slide level2">
+<h2>Again</h2>
+
+<img data-src="R_materials/images/local_remote.png" width="993" class="r-stretch quarto-figure-center"></section>
+<section id="commits" class="slide level2">
+<h2>Commits</h2>
+<p>+ Semi-permanent snapshots of your project 📸</p>
+<p>+ They capture the current state of your repository and carry a linked-list relationship</p>
+<p>+ all .purple[commits] are linked</p>
+<p>+ These lists development histories can be organized into .blue[branches] 🎋 (hold this thought)</p>
+</section>
+<section id="show-me" class="slide level2">
+<h2>Show Me</h2>
+<p>creating a repository, staging changes, making commits, branching, and merging</p>
+</section>
+<section id="github" class="slide level2">
+<h2>GitHub</h2>
+<ul>
+<li><p>Github is a web-based platform for storing and managing Git repositories</p></li>
+<li><p>Creating a repository on Github</p></li>
+<li><p>Pushing local changes to Github with <strong><code>git remote add</code></strong> and <strong><code>git push</code></strong></p></li>
+</ul>
+<aside class="notes">
+<p>Github is a web-based platform that provides a centralized location for storing and managing Git repositories. To use Github, you first need to create an account. Once you have created an account, you can create a new repository by clicking on the “New Repository” button on your Github homepage.</p>
+<p>This command will add a remote repository to your local repository and push your changes to the remote repository.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="github-pt.-2" class="slide level2">
+<h2>GitHub pt.&nbsp;2</h2>
+<ul>
+<li><p>Github provides a set of collaboration tools</p></li>
+<li><p>Creating pull requests to propose changes and get feedback</p></li>
+<li><p>Using issue tracking tools to track bugs and feature requests</p></li>
+</ul>
+<aside class="notes">
+<p>Github provides a powerful set of collaboration tools that allow developers to work together on the same codebase. One of the most common collaboration workflows is using pull requests. Pull requests allow developers to propose changes to a codebase and get feedback from other developers before merging the changes into the main branch.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="pull-requests-pr" class="slide level2">
+<h2>Pull Requests (PR)</h2>
+<ul>
+<li><p>Change branches with <code>git checkout -b &lt;new_branch_name&gt;</code></p></li>
+<li><p>Create the remote branch and push changes with <code>git push -u origin &lt;new_branch_name&gt;</code></p></li>
+<li><p>Create the PR on GitHub in the repository you want to merge into</p></li>
+<li><p>A PR will be reviewed by repository owner/manager</p></li>
+<li><p>Issues are a good tool for tracking bugs and feature requests</p></li>
+</ul>
+<aside class="notes">
+<p>This command will create a new branch and switch you to it. You can make your changes on this branch and commit them as usual.</p>
+<p>To create a pull request, go to the Github repository page and click on the “New Pull Request” button. Select your branch and the branch you want to merge your changes into. Github will show you a comparison of the changes between the two branches. You can then add a title and description for your pull request and submit it for review.</p>
+<p>Github also provides a set of issue tracking tools that allow developers to track bugs and feature requests. To create a new issue, click on the “New Issue” button on the Github repository page. You can then add a title and description for the issue and assign it to a specific developer.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="show-me-again" class="slide level2">
+<h2>Show Me Again</h2>
+<ul>
+<li>Example Python code demonstrating creating a pull request and creating an issue</li>
+</ul>
+</section>
+<section id="to-conclude" class="slide level2">
+<h2>To Conclude</h2>
+<ul>
+<li><p>Git and Github are essential tools for any developer working on a team</p></li>
+<li><p>This lecture covered the basics of Git and Github</p></li>
+<li><p>Examples and code snippets were presented in Python</p></li>
+</ul>
 <div class="footer footer-default">
 
 </div>
@@ -564,44 +730,6 @@
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

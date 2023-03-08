@@ -21,7 +21,7 @@ knitr::opts_chunk$set(include = FALSE)
 
 # https://github.com/garthtarr/sydney_xaringan is useful
 
-source("../../helpers/color_funs.R")
+source("./helpers/color_funs.R")
 ```
 
 class: segue-gold

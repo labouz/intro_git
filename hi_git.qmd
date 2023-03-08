@@ -1,6 +1,10 @@
 ---
 title: "Git and GitHub Fundamentals"
-format: revealjs
+author: "Layla Bouzoubaa"
+date: "March 8, 2023"
+format:
+  revealjs: 
+    theme: dark
 editor: visual
 ---
 
@@ -28,23 +32,33 @@ editor: visual
 
 -   Examples and code snippets will be presented in Python
 
-## Intro
+## What is Git
 
 -   Git and Github are essential tools for developers
 
 -   Git is a distributed version control system
 
--   Github is a web-based platform for storing and managing Git repositories
-
--   Examples and code snippets will be presented in Python
+    ![](R_materials/images/meme1.jpeg){width="256"}
 
 ::: notes
-Welcome to the lecture on the fundamentals of Git and Github. Git is a powerful tool that enables developers to manage and track changes in their codebase. Github, on the other hand, is a web-based platform that provides a centralized location for storing and managing Git repositories. This lecture will cover the basics of Git and Github, including how to create a repository, make commits, and push changes to a remote repository. We will also cover how to use Github to collaborate with other developers and manage issues and pull requests.
+Git, a powerful tool from Unix, that enables developers to manage and track changes in their codebase. Github, on the other hand, is a web-based platform that provides a centralized location for storing and managing Git repositories. This lecture will cover the basics of Git and Github, including how to create a repository, make commits, and push changes to a remote repository. We will also cover how to use Github to collaborate with other developers and manage issues and pull requests.
 :::
 
-## Git Basics
+## Why?
 
--   Git is a distributed version control system
+![](R_materials/images/withoutGit2.png){fig-align="center" width="382"}
+
+::: notes
+But actually, you an review a projects history to find out which changes were made, who made the changes, when were the changes made and why the changes were needed.
++ You end up with dozens or hundreds of versions.
++ What happens when somebody else needs to work on the code at the same time?
+:::
+
+## Git Basics Concepts
+
+-   Git is a distributed version control system - repositories
+
+    -   Local v remote
 
 -   Creating a repository with **`git init`**
 
@@ -55,12 +69,85 @@ Welcome to the lecture on the fundamentals of Git and Github. Git is a powerful 
 -   Branching and merging with **`git branch`** and **`git merge`**
 
 ::: notes
+A Git project - the whole collection of files and folders associated with a projects and their revision history . it contains a hidden .git folder
+
 Another powerful feature of Git is branching and merging. Branches allow you to work on multiple versions of your codebase simultaneously.
 :::
 
+## Again
+
+![](R_materials/images/local_remote.png){fig-align="center" width="993"}
+
+## Commits
+
+-   Semi-permanent snapshots of your project 📸
+
+-   They capture the current state of your repository and carry a linked-list relationship
+
+    -   all *commits* are linked
+
+    -   These lists development histories can be organized into *branches* 🎋 (hold this thought)
+
+::: notes
+semi-permanent because commits are meant to permanents store changes however they can be deleted but it's a pain in a\*\*.
+
+
+all .purple\[commits\] are linked so that if you make a mistake, you can travel up the list several commits and revert your project to that state.
+:::
+
+## Commits pt. 2 🤿
+
+::: columns
+::: {.column width="50%"}
+-   As you work on a project, you make changes on what is called a *working directory*
+
+-   Changes to your *working directory* must be staged before they can be committed
+
+    -   *Staging* tells Git you want to include updates to a file in the next *commit*
+
+    -   *Staging* can be undone and does not affect your repo in any way
+
+    -   ave the contents in the staging area with a COMMIT
+:::
+
+::: {.column width="50%"}
+![](R_materials/images/staging.png){fig-align="center"}
+:::
+:::
+
+## Branching
+
+::: columns
+::: {.column width="50%"}
+-   Make your changes
+
+-   Take a snapshot of those changes by adding them to the staging area
+
+-   Permanently store those changes to your repo by committing them
+
+-   Store your development in *branches*
+:::
+
+::: {.column width="50%"}
+![](R_materials/images/branching.png){fig-align="center" width="757"}
+:::
+:::
+
+## Push
+
+-   When you are ready to share your changes with others .red\[PUSH\] them (and your branch) to the central repository!
+
+-   You can keep pushing new commits (changes) to your branch until you are ready to make your modifications a permanent part of \`main\`
+
+    -   rule of 👍 #1: a new branch should correspond to a new feature and have a meaningful name
+
+    -   rule of 👍 #2: a commit should reflect a significant modification to your code
+
+    -   rule of 👍 #3: a commit message should be about 50 chars and effectivetly communicate the context of your changes - your future self will thank you 😉
+
 ## Show Me
 
-creating a repository, staging changes, making commits, branching, and merging
+*creating a repository, staging changes, making commits, branching*
 
 ## GitHub
 
@@ -119,3 +206,5 @@ Github also provides a set of issue tracking tools that allow developers to trac
 -   This lecture covered the basics of Git and Github
 
 -   Examples and code snippets were presented in Python
+
+## Resources
