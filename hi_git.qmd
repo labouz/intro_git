@@ -30,15 +30,13 @@ editor: visual
 
 -   GitHub basics with examples
 
--   Examples and code snippets will be presented in Python
-
 ## What is Git
 
 -   Git and Github are essential tools for developers
 
 -   Git is a distributed version control system
 
-    ![](R_materials/images/meme1.jpeg){width="337"}
+    ![](R_materials/images/meme1.jpeg){width="418"}
 
 ::: notes
 Git, a powerful tool from Unix, that enables developers to manage and track changes in their codebase. Github, on the other hand, is a web-based platform that provides a centralized location for storing and managing Git repositories. This lecture will cover the basics of Git and Github, including how to create a repository, make commits, and push changes to a remote repository. We will also cover how to use Github to collaborate with other developers and manage issues and pull requests.
@@ -46,12 +44,10 @@ Git, a powerful tool from Unix, that enables developers to manage and track chan
 
 ## Why?
 
-![](R_materials/images/withoutGit2.png){fig-align="center" width="382"}
+![](R_materials/images/withoutGit2.png){fig-align="center" width="566"}
 
 ::: notes
-But actually, you an review a projects history to find out which changes were made, who made the changes, when were the changes made and why the changes were needed.
-+ You end up with dozens or hundreds of versions.
-+ What happens when somebody else needs to work on the code at the same time?
+But actually, you an review a projects history to find out which changes were made, who made the changes, when were the changes made and why the changes were needed. + You end up with dozens or hundreds of versions. + What happens when somebody else needs to work on the code at the same time?
 :::
 
 ## Git Basics Concepts
@@ -90,7 +86,6 @@ Another powerful feature of Git is branching and merging. Branches allow you to 
 
 ::: notes
 semi-permanent because commits are meant to permanents store changes however they can be deleted but it's a pain in a\*\*.
-
 
 all .purple\[commits\] are linked so that if you make a mistake, you can travel up the list several commits and revert your project to that state.
 :::
@@ -159,7 +154,6 @@ Macs come with Git OOTB (or with XCode Tools) however PC users may need to insta
 :::
 
 ::: {.column width="50%"}
-
 ![](R_materials/images/warp.png)
 :::
 :::
