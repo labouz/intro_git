@@ -38,7 +38,7 @@ editor: visual
 
 -   Git is a distributed version control system
 
-    ![](R_materials/images/meme1.jpeg){width="256"}
+    ![](R_materials/images/meme1.jpeg){width="337"}
 
 ::: notes
 Git, a powerful tool from Unix, that enables developers to manage and track changes in their codebase. Github, on the other hand, is a web-based platform that provides a centralized location for storing and managing Git repositories. This lecture will cover the basics of Git and Github, including how to create a repository, make commits, and push changes to a remote repository. We will also cover how to use Github to collaborate with other developers and manage issues and pull requests.
@@ -98,20 +98,20 @@ all .purple\[commits\] are linked so that if you make a mistake, you can travel 
 ## Commits pt. 2 🤿
 
 ::: columns
-::: {.column width="50%"}
--   As you work on a project, you make changes on what is called a *working directory*
+::: {.column width="60%"}
+-   Make changes on a *working directory*
 
--   Changes to your *working directory* must be staged before they can be committed
+-   Changes to *working directory* must be staged before they can be committed
 
     -   *Staging* tells Git you want to include updates to a file in the next *commit*
 
     -   *Staging* can be undone and does not affect your repo in any way
 
-    -   ave the contents in the staging area with a COMMIT
+    -   Save the contents in the staging area with a COMMIT
 :::
 
-::: {.column width="50%"}
-![](R_materials/images/staging.png){fig-align="center"}
+::: {.column width="40%"}
+![](R_materials/images/staging.png){style="background-color:gray;" fig-align="center"}
 :::
 :::
 
@@ -135,9 +135,9 @@ all .purple\[commits\] are linked so that if you make a mistake, you can travel 
 
 ## Push
 
--   When you are ready to share your changes with others .red\[PUSH\] them (and your branch) to the central repository!
+-   When you are ready to share your changes with others PUSH them (and your branch) to the central repository!
 
--   You can keep pushing new commits (changes) to your branch until you are ready to make your modifications a permanent part of \`main\`
+-   You can keep pushing new commits (changes) to your branch until you are ready to make your modifications a permanent part of `main`
 
     -   rule of 👍 #1: a new branch should correspond to a new feature and have a meaningful name
 
@@ -145,13 +145,32 @@ all .purple\[commits\] are linked so that if you make a mistake, you can travel 
 
     -   rule of 👍 #3: a commit message should be about 50 chars and effectivetly communicate the context of your changes - your future self will thank you 😉
 
+## Set up Git
+
+\--\> Open up your terminals \<\--
+
+Macs come with Git OOTB (or with XCode Tools) however PC users may need to install it: https://git-scm.com/download/win
+
+-   `git –-version` to check
+
+::: columns
+::: {.column width="50%"}
+![](R_materials/images/iterm.png){width="109"}
+:::
+
+::: {.column width="50%"}
+
+![](R_materials/images/warp.png)
+:::
+:::
+
 ## Show Me
 
 *creating a repository, staging changes, making commits, branching*
 
 ## GitHub
 
--   Github is a web-based platform for storing and managing Git repositories
+-   Github is a web-based platform for storing and managing Git repositories (please create an account if you have not already)
 
 -   Creating a repository on Github
 
@@ -208,3 +227,17 @@ Github also provides a set of issue tracking tools that allow developers to trac
 -   Examples and code snippets were presented in Python
 
 ## Resources
+
+-   Git Handbook
+
+    -   https://guides.github.com/introduction/git-handbook/
+
+-   Code Refinery
+
+    -   https://coderefinery.github.io/git-intro/
+
+-   Oh Shit Git or Dangit Git
+
+    -   https://ohshitgit.com/
+
+    -   https://dangitgit.com/en

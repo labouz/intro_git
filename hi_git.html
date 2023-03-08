@@ -359,7 +359,7 @@ Layla Bouzoubaa
 <ul>
 <li><p>Git and Github are essential tools for developers</p></li>
 <li><p>Git is a distributed version control system</p>
-<p><img data-src="R_materials/images/meme1.jpeg" width="256"></p></li>
+<p><img data-src="R_materials/images/meme1.jpeg" width="337"></p></li>
 </ul>
 <aside class="notes">
 <p>Git, a powerful tool from Unix, that enables developers to manage and track changes in their codebase. Github, on the other hand, is a web-based platform that provides a centralized location for storing and managing Git repositories. This lecture will cover the basics of Git and Github, including how to create a repository, make commits, and push changes to a remote repository. We will also cover how to use Github to collaborate with other developers and manage issues and pull requests.</p>
@@ -425,19 +425,105 @@ Layla Bouzoubaa
 <img data-src="R_materials/images/local_remote.png" width="993" class="r-stretch quarto-figure-center"></section>
 <section id="commits" class="slide level2">
 <h2>Commits</h2>
-<p>+ Semi-permanent snapshots of your project 📸</p>
-<p>+ They capture the current state of your repository and carry a linked-list relationship</p>
-<p>+ all .purple[commits] are linked</p>
-<p>+ These lists development histories can be organized into .blue[branches] 🎋 (hold this thought)</p>
+<ul>
+<li><p>Semi-permanent snapshots of your project 📸</p></li>
+<li><p>They capture the current state of your repository and carry a linked-list relationship</p>
+<ul>
+<li><p>all <em>commits</em> are linked</p></li>
+<li><p>These lists development histories can be organized into <em>branches</em> 🎋 (hold this thought)</p></li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>semi-permanent because commits are meant to permanents store changes however they can be deleted but it’s a pain in a**.</p>
+<p>all .purple[commits] are linked so that if you make a mistake, you can travel up the list several commits and revert your project to that state.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="commits-pt.-2" class="slide level2">
+<h2>Commits pt.&nbsp;2 🤿</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li><p>Make changes on a <em>working directory</em></p></li>
+<li><p>Changes to <em>working directory</em> must be staged before they can be committed</p>
+<ul>
+<li><p><em>Staging</em> tells Git you want to include updates to a file in the next <em>commit</em></p></li>
+<li><p><em>Staging</em> can be undone and does not affect your repo in any way</p></li>
+<li><p>Save the contents in the staging area with a COMMIT</p></li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center" style="background-color:gray;">
+<figure>
+<p><img data-src="R_materials/images/staging.png"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="branching" class="slide level2">
+<h2>Branching</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p>Make your changes</p></li>
+<li><p>Take a snapshot of those changes by adding them to the staging area</p></li>
+<li><p>Permanently store those changes to your repo by committing them</p></li>
+<li><p>Store your development in <em>branches</em></p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="R_materials/images/branching.png" width="757"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="push" class="slide level2">
+<h2>Push</h2>
+<ul>
+<li><p>When you are ready to share your changes with others PUSH them (and your branch) to the central repository!</p></li>
+<li><p>You can keep pushing new commits (changes) to your branch until you are ready to make your modifications a permanent part of <code>main</code></p>
+<ul>
+<li><p>rule of 👍 #1: a new branch should correspond to a new feature and have a meaningful name</p></li>
+<li><p>rule of 👍 #2: a commit should reflect a significant modification to your code</p></li>
+<li><p>rule of 👍 #3: a commit message should be about 50 chars and effectivetly communicate the context of your changes - your future self will thank you 😉</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="set-up-git" class="slide level2">
+<h2>Set up Git</h2>
+<p>--&gt; Open up your terminals &lt;--</p>
+<p>Macs come with Git OOTB (or with XCode Tools) however PC users may need to install it: https://git-scm.com/download/win</p>
+<ul>
+<li><code>git –-version</code> to check</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="R_materials/images/iterm.png" width="109"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="R_materials/images/warp.png"></p>
+</div>
+</div>
 </section>
 <section id="show-me" class="slide level2">
 <h2>Show Me</h2>
-<p>creating a repository, staging changes, making commits, branching, and merging</p>
+<p><em>creating a repository, staging changes, making commits, branching</em></p>
 </section>
 <section id="github" class="slide level2">
 <h2>GitHub</h2>
 <ul>
-<li><p>Github is a web-based platform for storing and managing Git repositories</p></li>
+<li><p>Github is a web-based platform for storing and managing Git repositories (please create an account if you have not already)</p></li>
 <li><p>Creating a repository on Github</p></li>
 <li><p>Pushing local changes to Github with <strong><code>git remote add</code></strong> and <strong><code>git push</code></strong></p></li>
 </ul>
@@ -514,6 +600,24 @@ Layla Bouzoubaa
 <li><p>Git and Github are essential tools for any developer working on a team</p></li>
 <li><p>This lecture covered the basics of Git and Github</p></li>
 <li><p>Examples and code snippets were presented in Python</p></li>
+</ul>
+</section>
+<section id="resources" class="slide level2">
+<h2>Resources</h2>
+<ul>
+<li><p>Git Handbook</p>
+<ul>
+<li>https://guides.github.com/introduction/git-handbook/</li>
+</ul></li>
+<li><p>Code Refinery</p>
+<ul>
+<li>https://coderefinery.github.io/git-intro/</li>
+</ul></li>
+<li><p>Oh Shit Git or Dangit Git</p>
+<ul>
+<li><p>https://ohshitgit.com/</p></li>
+<li><p>https://dangitgit.com/en</p></li>
+</ul></li>
 </ul>
 <div class="footer footer-default">
 
