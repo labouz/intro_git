@@ -18,7 +18,7 @@ ev.head()
 g = sns.countplot(x="Model Year", data=ev)
 g.set_xticklabels(g.get_xticklabels(), rotation=90, ha="right")
 
-
+print("This was a helpful session")
 
 
 
